@@ -1,0 +1,147 @@
+/* HEADER  */
+
+@media (min-width:768px) {
+    header .name p {
+        font-size: 4rem;
+    }
+
+    header .name {
+        padding: 40px 0;
+    }
+
+    header .welcome {
+        padding: 30px 0;
+    }
+
+    header .welcome p {
+        margin: 0 25%;
+        border: 3px solid #eee;
+        font-size: 3rem;
+    }
+}
+
+/* BURGER MENU  */
+
+@media (min-width:768px) {
+    .burger {
+        width: 50px;
+        height: 50px;
+    }
+
+    .burger i {
+        font-size: 3.2rem;
+        line-height: 50px;
+    }
+}
+
+/* NAV  */
+
+@media (min-width:768px) {
+    nav a {
+        font-size: 2.5rem;
+    }
+}
+
+/* PIERWSZA SEKCJA  */
+
+@media (min-width:768px) {
+    section.aboutMe h1 {
+        font-size: 4.5rem;
+    }
+
+    section.aboutMe .infoAboutMe .photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    section.aboutMe .infoAboutMe .text p {
+        font-size: 2.5rem;
+    }
+}
+
+/* DRUGA SEKCJA  */
+
+@media (min-width:768px) {
+    section.skills h1 {
+        font-size: 4.5rem;
+    }
+
+    section.skills .all-skills .html,
+    section.skills .all-skills .css,
+    section.skills .all-skills .js,
+    section.skills .all-skills .sass,
+    section.skills .all-skills .react,
+    section.skills .all-skills .git {
+        flex-direction: row;
+    }
+
+    section.skills .all-skills img {
+        width: 40%;
+    }
+
+    section.skills .all-skills p {
+        font-size: 2.5rem;
+    }
+}
+
+/* TRZECIA SEKCJA  */
+
+@media (min-width:768px) {
+    section.quotes h1 {
+        font-size: 4.5rem;
+    }
+
+    section.quotes .firstQuot p,
+    section.quotes .secondQuot p,
+    section.quotes .thirdQuot p {
+        font-size: 3.8rem;
+    }
+
+}
+
+/* CZWARTA SEKCJA  */
+
+@media (min-width:768px) {
+    section.projects h1 {
+        font-size: 4.5rem;
+    }
+
+    section.projects .all-projects .project1 h2,
+    section.projects .all-projects .project2 h2,
+    section.projects .all-projects .project3 h2 {
+        font-size: 3.5rem;
+    }
+
+    section.projects .all-projects .project1 p,
+    section.projects .all-projects .project2 p,
+    section.projects .all-projects .project3 p {
+        font-size: 2.5rem;
+    }
+}
+
+/* FOOTER  */
+
+@media (min-width:768px) {
+    footer h1 {
+        font-size: 3.5rem;
+    }
+
+    footer .contact .mail h2,
+    footer .contact .github h2 {
+        font-size: 3rem;
+    }
+
+    footer .contact .mail i,
+    footer .contact .github i {
+        font-size: 5.7rem;
+    }
+
+    footer .contact .mail p,
+    footer .contact .github p {
+        font-size: 2.2rem;
+    }
+
+    footer p.footer {
+        font-size: 2rem;
+    }
+}

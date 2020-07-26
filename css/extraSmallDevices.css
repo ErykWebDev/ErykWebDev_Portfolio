@@ -1,0 +1,533 @@
+/* font-family: 'Yanone Kaffeesatz', sans-serif; 
+font-family: 'Fjalla One', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url(../img/stars-964022_1280.png);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    animation: bgc 120s linear infinite;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/portfoliobg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Fjalla One', sans-serif;
+    z-index: 3;
+}
+
+header .name,
+header .welcome {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(25, 25, 25, .7);
+}
+
+header .name {
+    top: 0;
+    padding: 30px 0;
+}
+
+header .welcome {
+    bottom: 0;
+    padding: 20px 0;
+}
+
+header .name p,
+header .welcome p {
+    text-align: center;
+    font-size: 2.7rem;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+header .welcome p {
+    margin: 0 20%;
+    padding: 10px 0;
+    border: 2px solid #eee;
+    background-color: rgba(20, 20, 20, .7);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* WRAPPER  */
+
+.wrapper {
+    margin: 0 5%;
+    overflow: hidden;
+}
+
+/* BURGER MENU  */
+
+.burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(25, 25, 25, .7);
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger i {
+    color: #eee;
+    font-size: 2.8rem;
+    line-height: 30px;
+    transition: .2s linear;
+}
+
+/* NAV  */
+
+nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .6s;
+    z-index: 1;
+}
+
+nav.active {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(25, 25, 25, .85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+nav a {
+    text-align: center;
+    color: #eee;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+
+/* PIERWSZA SEKCJA  */
+
+section.aboutMe {
+    padding: 10% 5% 0 5%;
+}
+
+section.aboutMe h1 {
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+section.aboutMe .infoAboutMe {
+    padding: 5%;
+    background-color: rgba(70, 70, 70, .4);
+}
+
+section.aboutMe .infoAboutMe .photo {
+    position: relative;
+    left: -100%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    background-image: url(../img/portrait-3353699_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 2px 2px #eee;
+    transition: .7s;
+}
+
+section.aboutMe .photo.active {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.aboutMe .infoAboutMe .text p {
+    position: relative;
+    right: -100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1px;
+    transition: .7s;
+}
+
+section.aboutMe .infoAboutMe .text p.active {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* DRUGA SEKCJA  */
+
+section.skills {
+    padding: 15% 5% 0 5%;
+}
+
+section.skills h1 {
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+section.skills .all-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+section.skills .all-skills .html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5% 0;
+    border-radius: 3%;
+    background-color: #eee;
+    transform: scale(0);
+    transition: .4s linear;
+}
+
+section.skills .all-skills .css,
+section.skills .all-skills .js,
+section.skills .all-skills .sass,
+section.skills .all-skills .react {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 5% 0;
+    border-radius: 3%;
+    background-color: #eee;
+    transform: scale(0);
+    transition: .4s linear;
+}
+
+section.skills .all-skills .git {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 0 0;
+    border-radius: 3%;
+    background-color: #eee;
+    transform: scale(0);
+    transition: .4s linear;
+}
+
+section.skills .all-skills .html.active,
+section.skills .all-skills .css.active,
+section.skills .all-skills .js.active,
+section.skills .all-skills .sass.active,
+section.skills .all-skills .react.active,
+section.skills .all-skills .git.active {
+    transform: scale(1);
+}
+
+section.skills .all-skills .html {
+    box-shadow: 0 0 3px 3px #de4b25;
+}
+
+section.skills .all-skills .css {
+    box-shadow: 0 0 3px 3px #0270ba;
+}
+
+section.skills .all-skills .js {
+    box-shadow: 0 0 3px 3px #df9e27;
+}
+
+section.skills .all-skills .sass {
+    box-shadow: 0 0 3px 3px #964870;
+}
+
+section.skills .all-skills .react {
+    box-shadow: 0 0 3px 3px #61dafc;
+}
+
+section.skills .all-skills .git {
+    box-shadow: 0 0 3px 3px #f05133;
+}
+
+section.skills .all-skills .html:hover {
+    box-shadow: 0 0 5px 5px #de4b25;
+}
+
+section.skills .all-skills .css:hover {
+    box-shadow: 0 0 5px 5px #0270ba;
+}
+
+section.skills .all-skills .js:hover {
+    box-shadow: 0 0 5px 5px #df9e27;
+}
+
+section.skills .all-skills .sass:hover {
+    box-shadow: 0 0 5px 5px #964870;
+}
+
+section.skills .all-skills .react:hover {
+    box-shadow: 0 0 5px 5px #61dafc;
+}
+
+section.skills .all-skills .git:hover {
+    box-shadow: 0 0 5px 5px #f05133;
+}
+
+section.skills .all-skills img {
+    display: block;
+    width: 50%;
+    padding: 5% 0;
+}
+
+section.skills .all-skills p {
+    padding: 5%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* TRZECIA SEKCJA  */
+
+section.quotes {
+    padding: 15% 5% 0 5%;
+}
+
+section.quotes h1 {
+    margin-bottom: 10%;
+    text-align: center;
+    color: #eee;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+section.quotes .firstQuot,
+section.quotes .secondQuot,
+section.quotes .thirdQuot {
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto 5% auto;
+    background-color: rgba(70, 70, 70, .4);
+    box-shadow: 0 0 2px 2px #eee;
+}
+
+section.quotes .secondQuot {
+    margin: 5% auto;
+}
+
+section.quotes .thirdQuot {
+    margin: 5% auto 0 auto;
+}
+
+section.quotes .firstQuot p,
+section.quotes .secondQuot p,
+section.quotes .thirdQuot p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    transition: .7s;
+}
+
+section.quotes .firstQuot p {
+    left: -100%;
+}
+
+section.quotes .secondQuot p {
+    right: -100%;
+}
+
+section.quotes .thirdQuot p {
+    left: -100%;
+}
+
+section.quotes .firstQuot p.active {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.quotes .secondQuot p.active {
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+section.quotes .thirdQuot p.active {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CZWARTA SEKCJA  */
+
+section.projects {
+    padding: 15% 5% 10% 5%;
+}
+
+section.projects h1 {
+    margin-bottom: 10%;
+    text-align: center;
+    color: #eee;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+section.projects .all-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+section.projects .all-projects .project1 {
+    width: 100%;
+    margin: 0 0 5% 0;
+    background-color: #eee;
+    box-shadow: 0 0 2px 2px #eee;
+    overflow: hidden;
+}
+
+section.projects .all-projects .project2,
+section.projects .all-projects .project3 {
+    width: 100%;
+    margin: 5% 0;
+    background-color: #eee;
+    box-shadow: 0 0 2px 2px #eee;
+    overflow: hidden
+}
+
+section.projects .all-projects .project1 img,
+section.projects .all-projects .project2 img,
+section.projects .all-projects .project3 img {
+    display: block;
+    width: 100%;
+    opacity: .8;
+    transition: .2s linear;
+}
+
+section.projects .all-projects .project1 img:hover,
+section.projects .all-projects .project2 img:hover,
+section.projects .all-projects .project3 img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+section.projects .all-projects .project1 h2,
+section.projects .all-projects .project2 h2,
+section.projects .all-projects .project3 h2 {
+    background-color: #222;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #eee;
+    line-height: 150%;
+}
+
+section.projects .all-projects .project1 p,
+section.projects .all-projects .project2 p,
+section.projects .all-projects .project3 p {
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* FOOTER  */
+
+footer {
+    background-color: #111;
+    text-align: center;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+footer h1 {
+    padding-top: 5%;
+    font-size: 2.5rem;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 8% 0;
+}
+
+footer .contact .mail,
+footer .contact .github {
+    flex-basis: 45%;
+    padding: 2% 0;
+    background-color: #333;
+    box-shadow: 0 0 2px 2px #eee;
+}
+
+footer .contact .mail h2,
+footer .contact .github h2 {
+    font-size: 2rem;
+}
+
+footer .contact .mail i,
+footer .contact .github i {
+    font-size: 3.5rem;
+    color: #eee;
+    line-height: 150%;
+}
+
+footer .contact .mail p,
+footer .contact .github p {
+    font-size: 1.5rem;
+}
+
+footer p.footer {
+    padding-bottom: 3%;
+    font-size: 1.3rem;
+}
+
+/* KEYFRAMES  */
+
+@keyframes bgc {
+    0% {
+        background-position: 0 0;
+    }
+
+    33% {
+        background-position: 1000px 0;
+    }
+
+    66% {
+        background-position: 2000px 0;
+    }
+
+    100% {
+        background-position: 3000px 0;
+    }
+}

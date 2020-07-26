@@ -1,0 +1,166 @@
+/* HEADER  */
+
+@media(min-width:1024px) {
+    header .name p {
+        font-size: 5rem;
+    }
+
+    header .name {
+        padding: 50px 0;
+    }
+
+    header .welcome {
+        padding: 40px 0;
+    }
+
+    header .welcome p {
+        margin: 0 30%;
+        border: 4px solid #eee;
+        font-size: 3.6rem;
+    }
+}
+
+/* BURGER MENU  */
+
+@media (min-width:1024px) {
+    .burger {
+        width: 60px;
+        height: 60px;
+    }
+
+    .burger i {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+}
+
+/* NAV */
+
+@media (min-width:1024px) {
+    nav a {
+        font-size: 3rem;
+    }
+}
+
+/* PIERWSZA SEKCJA */
+
+@media (min-width:1024px) {
+
+    section.aboutMe h1 {
+        font-size: 5.5rem;
+    }
+
+    section.aboutMe .infoAboutMe .photo {
+        box-shadow: 0 0 3px 3px #eee;
+        width: 100px;
+        height: 100px;
+    }
+
+    section.aboutMe .infoAboutMe .text p {
+        font-size: 3rem;
+    }
+}
+
+/* DRUGA SEKCJA  */
+
+@media (min-width:1024px) {
+    section.skills h1 {
+        font-size: 5.5rem;
+    }
+
+    section.skills .all-skills {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    section.skills .all-skills :nth-child(1),
+    section.skills .all-skills :nth-of-type(2) {
+        flex-direction: column;
+        width: 45%;
+        margin: 0 0 5% 0;
+    }
+
+    section.skills .all-skills .js,
+    section.skills .all-skills .sass {
+        flex-direction: column;
+        width: 45%;
+    }
+
+    section.skills .all-skills .react,
+    section.skills .all-skills .github {
+        flex-direction: column;
+        width: 45%;
+        margin: 5% 0 0 0;
+    }
+
+    section.skills .all-skills p {
+        font-size: 3rem;
+    }
+}
+
+/* TRZECIA SEKCJA  */
+
+@media (min-width:1024px) {
+    section.quotes h1 {
+        font-size: 5.5rem;
+    }
+
+    section.quotes .firstQuot p,
+    section.quotes .secondQuot p,
+    section.quotes .thirdQuot p {
+        font-size: 4.4rem;
+    }
+}
+
+/* CZWARTA SEKCJA  */
+
+@media (min-width:1024px) {
+    section.projects h1 {
+        font-size: 5.5rem;
+
+    }
+
+    section.projects .all-projects .project1 h2,
+    section.projects .all-projects .project2 h2,
+    section.projects .all-projects .project3 h2 {
+        font-size: 4.2rem;
+    }
+
+    section.projects .all-projects .project1 p,
+    section.projects .all-projects .project2 p,
+    section.projects .all-projects .project3 p {
+        font-size: 3rem;
+    }
+}
+
+/* FOOTER  */
+
+@media (min-width:1024px) {
+    footer .contact {
+        padding: 2% 0;
+    }
+
+    footer h1 {
+        font-size: 4.2rem;
+    }
+
+    footer .contact .mail h2,
+    footer .contact .github h2 {
+        font-size: 3.5rem;
+    }
+
+    footer .contact .mail i,
+    footer .contact .github i {
+        font-size: 6.5rem;
+    }
+
+    footer .contact .mail p,
+    footer .contact .github p {
+        font-size: 2.8rem;
+    }
+
+    footer p.footer {
+        font-size: 2.5rem;
+    }
+}
