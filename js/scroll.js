@@ -12,12 +12,11 @@ $(document).on('scroll', function () {
     const txtFromTop = $txt.offset().top;
 
     const imageHeight = $image.height();
-    const txtHeight = $txt.height();
 
     if (scrollValue > imageFromTop + imageHeight / 2 - windowHeight) {
         $image.addClass('active');
     }
-    if (scrollValue > txtFromTop + txtHeight / 2 - windowHeight) {
+    if (scrollValue > txtFromTop + imageHeight / 2 - windowHeight) {
         $txt.addClass('active');
     }
 
