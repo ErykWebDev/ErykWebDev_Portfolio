@@ -61,8 +61,6 @@ header .welcome button {
     left:50%;
     transform: translateX(-50%);
     padding: 7px 20px;
-    /* margin: 0 20%;
-    padding: 10px 0; */
     border: 2px solid #eee;
     background-color: rgb(20, 20, 20);
     font-size: 2rem;
@@ -144,7 +142,7 @@ nav a:hover {
 /* PIERWSZA SEKCJA  */
 
 section.aboutMe {
-    padding: 10% 5% 0 5%;
+    padding: 15% 5% 0 5%;
 }
 
 section.aboutMe h2 {
@@ -187,7 +185,7 @@ section.aboutMe .infoAboutMe .text p {
     font-size: 2rem;
     color: white;
     letter-spacing: 1px;
-    line-height: 135%;
+    line-height: 140%;
     transition: .7s;
 }
 
