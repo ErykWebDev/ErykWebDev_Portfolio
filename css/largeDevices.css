@@ -1,7 +1,7 @@
 /* HEADER  */
 
 @media(min-width:1200px) {
-    header .name p {
+    header .name h1 {
         font-size: 7rem;
     }
 
@@ -22,7 +22,7 @@
 /* PIERWSZA SEKCJA  */
 
 @media (min-width:1200px) {
-    section.aboutMe h1 {
+    section.aboutMe h2 {
         margin-bottom: 5%;
         font-size: 6.5rem;
     }
@@ -36,7 +36,7 @@
 /* DRUGA SEKCJA  */
 
 @media (min-width:1200px) {
-    section.skills h1 {
+    section.skills h2 {
         margin-bottom: 5%;
         font-size: 6.5rem;
     }
@@ -72,7 +72,7 @@
 /* TRZECIA SEKCJA  */
 
 @media (min-width:1200px) {
-    section.quotes h1 {
+    section.quotes h2 {
         margin-bottom: 5%;
         font-size: 6.5rem;
     }
@@ -97,7 +97,7 @@
         padding: 15% 5% 5% 5%;
     }
 
-    section.projects h1 {
+    section.projects h2 {
         margin-bottom: 5%;
         font-size: 6.5rem;
     }
@@ -124,9 +124,9 @@
     }
 
 
-    section.projects .all-projects .project1 h2,
-    section.projects .all-projects .project2 h2,
-    section.projects .all-projects .project3 h2 {
+    section.projects .all-projects .project1 h3,
+    section.projects .all-projects .project2 h3,
+    section.projects .all-projects .project3 h3 {
         font-size: 4.5rem;
     }
 }
@@ -139,7 +139,7 @@
         padding: 2% 0;
     }
 
-    footer h1 {
+    footer h2 {
         padding-top: 2%;
         font-size: 4rem;
     }
@@ -149,8 +149,8 @@
         flex-basis: 40%;
     }
 
-    footer .contact .mail h2,
-    footer .contact .github h2 {
+    footer .contact .mail h3,
+    footer .contact .github h3 {
         font-size: 3.2rem;
     }
 

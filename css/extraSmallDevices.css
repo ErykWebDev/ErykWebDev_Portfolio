@@ -49,7 +49,7 @@ header .welcome {
     padding: 20px 0;
 }
 
-header .name p,
+header .name h1,
 header .welcome p {
     text-align: center;
     font-size: 2.7rem;
@@ -142,7 +142,7 @@ section.aboutMe {
     padding: 10% 5% 0 5%;
 }
 
-section.aboutMe h1 {
+section.aboutMe h2 {
     margin-bottom: 10%;
     text-align: center;
     font-size: 3rem;
@@ -196,7 +196,7 @@ section.skills {
     padding: 15% 5% 0 5%;
 }
 
-section.skills h1 {
+section.skills h2 {
     margin-bottom: 10%;
     text-align: center;
     font-size: 3rem;
@@ -321,7 +321,7 @@ section.quotes {
     padding: 15% 5% 0 5%;
 }
 
-section.quotes h1 {
+section.quotes h2 {
     margin-bottom: 10%;
     text-align: center;
     color: #eee;
@@ -395,7 +395,7 @@ section.projects {
     padding: 15% 5% 10% 5%;
 }
 
-section.projects h1 {
+section.projects h2 {
     margin-bottom: 10%;
     text-align: center;
     color: #eee;
@@ -441,9 +441,9 @@ section.projects .all-projects .project3 img:hover {
     opacity: 1;
 }
 
-section.projects .all-projects .project1 h2,
-section.projects .all-projects .project2 h2,
-section.projects .all-projects .project3 h2 {
+section.projects .all-projects .project1 h3,
+section.projects .all-projects .project2 h3,
+section.projects .all-projects .project3 h3 {
     background-color: #222;
     text-align: center;
     font-size: 2.5rem;
@@ -468,7 +468,7 @@ footer {
     text-transform: uppercase;
 }
 
-footer h1 {
+footer h2 {
     padding-top: 5%;
     font-size: 2.5rem;
 }
@@ -490,8 +490,8 @@ footer .contact .github {
     box-shadow: 0 0 2px 2px #eee;
 }
 
-footer .contact .mail h2,
-footer .contact .github h2 {
+footer .contact .mail h3,
+footer .contact .github h3 {
     font-size: 2rem;
 }
 
