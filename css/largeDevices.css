@@ -5,8 +5,8 @@
         font-size: 7rem;
     }
 
-    header .welcome p {
-        margin: 0 40%;
+    header .welcome button {
+        padding: 20px 70px;
         font-size: 3.6rem;
     }
 }

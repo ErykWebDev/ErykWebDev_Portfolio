@@ -10,7 +10,7 @@ burger.addEventListener('click', function () {
 
 // CLICK FUNCTIONS 
 
-$('.welcome').on('click', function () {
+$('.welcome button').on('click', function () {
     $('body, html').animate({
         scrollTop: $('.wrapper').offset().top
     }, 500)

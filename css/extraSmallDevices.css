@@ -50,20 +50,26 @@ header .welcome {
 }
 
 header .name h1,
-header .welcome p {
+header .welcome button {
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #eee;
     text-transform: uppercase;
 }
 
-header .welcome p {
-    margin: 0 20%;
-    padding: 10px 0;
+header .welcome button {
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 7px 20px;
+    /* margin: 0 20%;
+    padding: 10px 0; */
     border: 2px solid #eee;
     background-color: rgba(20, 20, 20, .7);
     font-size: 2rem;
     cursor: pointer;
+    outline: none;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 /* WRAPPER  */
@@ -182,6 +188,7 @@ section.aboutMe .infoAboutMe .text p {
     font-size: 2rem;
     color: white;
     letter-spacing: 1px;
+    line-height: 140%;
     transition: .7s;
 }
 

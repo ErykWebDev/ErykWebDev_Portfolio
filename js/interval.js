@@ -1,6 +1,6 @@
 // INTERVAL FUNCTION 
 
-const headerTop = document.querySelector('.name h2');
+const headerTop = document.querySelector('.name h1');
 const headerTxt = 'Eryk Winnicki - FrontEnd Developer';
 let index = 0;
 
