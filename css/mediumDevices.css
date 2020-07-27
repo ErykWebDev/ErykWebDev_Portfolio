@@ -24,12 +24,13 @@
 
 @media (min-width:1024px) {
     .burger {
+        top: 1%;
+        right: 1%;
         width: 60px;
         height: 60px;
     }
 
     .burger i {
-        font-size: 4rem;
         line-height: 60px;
     }
 }
@@ -37,8 +38,13 @@
 /* NAV */
 
 @media (min-width:1024px) {
+    nav,
+    nav.active {
+        padding: 15px 0;
+    }   
+
     nav a {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
@@ -51,9 +57,9 @@
     }
 
     section.aboutMe .infoAboutMe .photo {
-        box-shadow: 0 0 3px 3px #eee;
         width: 100px;
         height: 100px;
+        box-shadow: 0 0 3px 3px #eee;
     }
 
     section.aboutMe .infoAboutMe .text p {
