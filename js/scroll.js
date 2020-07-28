@@ -41,22 +41,22 @@ $(document).on('scroll', function () {
     const reactHeight = $react.height();
     const gitHeight = $git.height();
 
-    if (scrollValue > htmlFromTop + htmlHeight / 2 - windowHeight) {
+    if (scrollValue > htmlFromTop + htmlHeight / 3 - windowHeight) {
         $html.addClass('active');
     }
-    if (scrollValue > cssFromTop + cssHeight / 2 - windowHeight) {
+    if (scrollValue > cssFromTop + cssHeight / 3 - windowHeight) {
         $css.addClass('active');
     }
-    if (scrollValue > jsFromTop + jsHeight / 2 - windowHeight) {
+    if (scrollValue > jsFromTop + jsHeight / 3 - windowHeight) {
         $js.addClass('active');
     }
-    if (scrollValue > sassFromTop + sassHeight / 2 - windowHeight) {
+    if (scrollValue > sassFromTop + sassHeight / 3 - windowHeight) {
         $sass.addClass('active');
     }
-    if (scrollValue > reactFromTop + reactHeight / 2 - windowHeight) {
+    if (scrollValue > reactFromTop + reactHeight / 3 - windowHeight) {
         $react.addClass('active');
     }
-    if (scrollValue > gitFromTop + gitHeight / 2 - windowHeight) {
+    if (scrollValue > gitFromTop + gitHeight / 3 - windowHeight) {
         $git.addClass('active');
     }
 

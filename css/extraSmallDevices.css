@@ -339,7 +339,7 @@ section.quotes .thirdQuot {
     width: 100%;
     height: 15vh;
     margin: 0 auto 5% auto;
-    background-color: rgba(70, 70, 70, .4);
+    background-color: rgba(90, 90, 90, .4);
     box-shadow: 0 0 2px 2px #eee;
 }
 
@@ -416,8 +416,8 @@ section.projects .all-projects .project1 {
     width: 100%;
     margin: 0 0 5% 0;
     background-color: #eee;
-    box-shadow: 0 0 2px 2px #eee;
     overflow: hidden;
+    border: 2px solid #eee;
 }
 
 section.projects .all-projects .project2,
@@ -425,8 +425,8 @@ section.projects .all-projects .project3 {
     width: 100%;
     margin: 5% 0;
     background-color: #eee;
-    box-shadow: 0 0 2px 2px #eee;
-    overflow: hidden
+    overflow: hidden;
+    border: 2px solid #eee;
 }
 
 section.projects .all-projects .project1 img,
@@ -435,19 +435,21 @@ section.projects .all-projects .project3 img {
     display: block;
     width: 100%;
     opacity: .8;
-    transition: .2s linear;
+    transition: .1s linear;
+    z-index: -1;
 }
 
 section.projects .all-projects .project1 img:hover,
 section.projects .all-projects .project2 img:hover,
 section.projects .all-projects .project3 img:hover {
-    transform: scale(1.05);
     opacity: 1;
 }
 
-section.projects .all-projects .project1 h3,
-section.projects .all-projects .project2 h3,
-section.projects .all-projects .project3 h3 {
+section.projects .all-projects .project1 p.live,
+section.projects .all-projects .project2 p.live,
+section.projects .all-projects .project3 p.live {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
     background-color: #222;
     text-align: center;
     font-size: 2.5rem;
@@ -455,9 +457,37 @@ section.projects .all-projects .project3 h3 {
     line-height: 150%;
 }
 
-section.projects .all-projects .project1 p,
-section.projects .all-projects .project2 p,
-section.projects .all-projects .project3 p {
+section.projects .all-projects .project1 h3,
+section.projects .all-projects .project2 h3,
+section.projects .all-projects .project3 h3 {
+    border-bottom: 2px solid #eee;
+    background-color: #222;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #eee;
+    line-height: 150%;
+}
+
+section.projects .all-projects .project1 a,
+section.projects .all-projects .project2 a,
+section.projects .all-projects .project3 a {
+    text-decoration: none;
+}
+
+section.projects .all-projects .project1 p.code,
+section.projects .all-projects .project2 p.code,
+section.projects .all-projects .project3 p.code {
+    border-bottom: 2px solid #eee;
+    background-color: #222;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #eee;
+    line-height: 150%;
+}
+
+section.projects .all-projects .project1 p.txt,
+section.projects .all-projects .project2 p.txt,
+section.projects .all-projects .project3 p.txt {
     padding: 2%;
     text-align: center;
     font-size: 2rem;

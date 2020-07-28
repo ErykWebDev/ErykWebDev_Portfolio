@@ -106,15 +106,40 @@
         font-size: 4.5rem;
     }
 
+    section.projects .all-projects .project1 {
+        border: 3px solid #eee;
+    }
+    
+    section.projects .all-projects .project2,
+    section.projects .all-projects .project3 {
+        border: 3px solid #eee;
+    }
+
+    section.projects .all-projects .project1 p.live,
+    section.projects .all-projects .project2 p.live,
+    section.projects .all-projects .project3 p.live {
+       border-top: 3px solid #eee;
+       border-bottom: 3px solid #eee;
+       font-size: 3.2rem;
+    }
+
     section.projects .all-projects .project1 h3,
     section.projects .all-projects .project2 h3,
     section.projects .all-projects .project3 h3 {
+        border-bottom: 3px solid #eee;
         font-size: 3.5rem;
     }
 
-    section.projects .all-projects .project1 p,
-    section.projects .all-projects .project2 p,
-    section.projects .all-projects .project3 p {
+    section.projects .all-projects .project1 p.code,
+    section.projects .all-projects .project2 p.code,
+    section.projects .all-projects .project3 p.code {
+       border-bottom: 3px solid #eee;
+       font-size: 3.2rem;
+    }
+
+    section.projects .all-projects .project1 p.txt,
+    section.projects .all-projects .project2 p.txt,
+    section.projects .all-projects .project3 p.txt {
         font-size: 2.5rem;
     }
 }
